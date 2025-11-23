@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Révisions Mega+</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 Révisions Mega+</h1>
+        <p class="subtitle">La plus grosse appli de révisions 🔥</p>
+    </header>
+
+    <nav class="menu">
+        <button class="tabBtn" data-tab="fiches">📘 Fiches</button>
+        <button class="tabBtn" data-tab="quiz">🧠 Quiz</button>
+        <button class="tabBtn" data-tab="stats">📊 Stats</button>
+    </nav>
+
+    <!-- FICHES -->
+    <section id="fiches" class="tab active">
+        <h2>Fiches de révision</h2>
+
+        <div class="fiche-box">
+            <h3 id="ficheTitle">Titre fiche</h3>
+            <p id="ficheContent">Contenu de la fiche...</p>
+        </div>
+
+        <div class="controls">
+            <button id="prevFiche">⬅️ Précédente</button>
+            <button id="nextFiche">➡️ Suivante</button>
+        </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="tab">
+        <h2>Quiz interactifs</h2>
+
+        <div class="quiz-box">
+            <h3 id="quizQuestion">Question...</h3>
+            <div id="quizOptions" class="options"></div>
+            <p id="quizFeedback"></p>
+
+            <button id="nextQuestion">Question suivante ➡️</button>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" class="tab">
+        <h2>Statistiques</h2>
+        <p>Score total : <span id="score">0</span> / <span id="total">0</span></p>
+
+        <h3>Fiches vues</h3>
+        <ul id="seenFiches"></ul>
+    </section>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
