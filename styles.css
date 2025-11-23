@@ -1,0 +1,71 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f3f6ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #4b66ff;
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+.subtitle {
+    opacity: 0.8;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.tabBtn {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background: #dce1ff;
+    font-weight: 600;
+}
+
+.tab {
+    display: none;
+    padding: 20px;
+}
+
+.tab.active {
+    display: block;
+}
+
+.fiche-box, .quiz-box {
+    background: white;
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px #0002;
+}
+
+.controls button, #nextQuestion {
+    margin: 10px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    background: #4b66ff;
+    color: white;
+}
+
+.options button {
+    display: block;
+    width: 80%;
+    margin: 8px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #e7e9ff;
+}
